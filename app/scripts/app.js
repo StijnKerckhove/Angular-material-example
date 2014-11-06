@@ -11,7 +11,7 @@
  *
  * Main module of the application.
  */
-app = angular
+var app = angular
   .module('angularMaterialExampleApp', [
     'ngAnimate',
     'ngCookies',
