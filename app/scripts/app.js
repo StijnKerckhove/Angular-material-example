@@ -1,3 +1,6 @@
+/* global app:true */
+/* exported app */
+
 'use strict';
 
 /**
@@ -8,14 +11,15 @@
  *
  * Main module of the application.
  */
-angular
+app = angular
   .module('angularMaterialExampleApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
