@@ -7,10 +7,8 @@
  * # MainCtrl
  * Controller of the angularMaterialExampleApp
  */
- app.controller('MainCtrl', function ($scope) {
- 	$scope.awesomeThings = [
- 	'HTML5 Boilerplate',
- 	'AngularJS',
- 	'Karma'
- 	];
+ app.controller('MainCtrl', function ($scope, $mdSidenav) {
+ 	$scope.openLeftMenu = function() {
+ 		$mdSidenav('left').toggle();
+ 	};
  });
